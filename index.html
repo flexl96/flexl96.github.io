@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geburtstagseinladung</title>
+</head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+
+    <h1>Geburtstagseinladung</h1>
+    <p>Bitte fülle das folgende Formular aus, um uns mitzuteilen, ob du zur Party kommst:</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <p>Kommst du zu meiner Party?</p>
+        <input type="radio" id="yes" name="attending" value="Ja" required>
+        <label for="yes">Ja</label><br>
+        <input type="radio" id="no" name="attending" value="Nein" required>
+        <label for="no">Nein</label><br><br>
+
+        <button type="submit">Absenden</button>
+    </form>
+
 </body>
 
 </html>
